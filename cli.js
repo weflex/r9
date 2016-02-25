@@ -1,22 +1,21 @@
 #!/usr/bin/env node
 
-var path = require('path');
-var fs = require('fs');
+const path = require('path');
+const fs = require('fs');
 
-var program = require('commander');
-var npmconf = require('npmconf');
-var ini = require('ini');
-var echo = require('node-echo');
-var extend = require('extend');
-var open = require('open');
-var async = require('async');
-var request = require('request');
-var only = require('only');
+const program = require('commander');
+const npmconf = require('npmconf');
+const ini = require('ini');
+const echo = require('node-echo');
+const extend = require('extend');
+const open = require('open');
+const async = require('async');
+const request = require('request');
+const only = require('only');
 
-var registries = require('./registries.json');
-var PKG = require('./package.json');
-var NRMRC = path.join(process.env.HOME, '.nrmrc');
-
+const registries = require('./registries.json');
+const PKG = require('./package.json');
+const NRMRC = path.join(process.env.HOME, '.nrmrc');
 
 program
     .version(PKG.version);

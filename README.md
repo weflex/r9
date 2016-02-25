@@ -1,20 +1,19 @@
-nrm(1) -- npm registry manager
-===
+# r9(1) -- npm registry manager
 
-`nrm` can help you easy and fast switch between different npm registries,
-now include: `npm`, `cnpm`, `eu`,  `au`, `sl(strongloop)`, `nj(nodejitsu)`, `pt(Portuguese)`.
-
-Recently npm has some problem frequently, `nrm` will be helpful to all noders.
+`r9` can help you easy and fast switch between different npm registries.
 
 ## Install
 
-```
-$ npm install -g nrm
+```sh
+$ npm install -g r9
 ```
 
 ## Example
-```
-$ nrm ls
+
+### List all registries
+
+```sh
+$ r9 ls
 
 * npm ---- https://registry.npmjs.org/
   cnpm --- http://r.cnpmjs.org/
@@ -27,17 +26,19 @@ $ nrm ls
 
 ```
 
-```
-$ nrm use cnpm  //switch registry to cnpm
+### Select a registry
 
-    Registry has been set to: http://r.cnpmjs.org/
+```sh
+$ r9 use weflex  //switch registry to weflex
 
-```
-
-## Usage
+    Registry has been set to: http://npm.weflex.org:2970/
 
 ```
-Usage: nrm [options] [command]
+
+## CLI Usage
+
+```
+Usage: r9 [options] [command]
 
   Commands:
 
@@ -58,13 +59,13 @@ Usage: nrm [options] [command]
 ## Registries
 
 * [npm](https://www.npmjs.org)
-* [cnpm](http://cnpmjs.org)
-* [strongloop](http://strongloop.com)
-* [european](http://npmjs.eu)
-* [australia](http://npmjs.org.au)
-* [nodejitsu](https://www.nodejitsu.com)
-* [taobao](http://npm.taobao.org/)
-* [Portuguese](http://npmjs.pt/)
+* [wpm](http://npm.weflex.org)
+
+## Thanks
+
+This package is fork of [Pana/nrm](https://github.com/Pana/nrm), thanks for @Pana to create
+the original repostory in the world.
 
 ## LICENSE
+
 MIT
